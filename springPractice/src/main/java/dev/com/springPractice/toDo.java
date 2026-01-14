@@ -25,5 +25,13 @@ public class toDo {
     String createUser(@RequestBody String body){
         return body;
     }
+    @PutMapping("/{id}")
+        String updateToDo(@PathVariable long id){
+            return "update:"+ id;
+        }
+     @DeleteMapping("/{id}")
+            String deleteToDo(@PathVariable long id){
+                return "delete:"+id;
+            }
 }
 
