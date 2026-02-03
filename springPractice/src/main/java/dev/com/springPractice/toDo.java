@@ -21,10 +21,10 @@ public class toDo {
     String toDoWithDiffIdName(@RequestParam("toDoId") String id){
         return "the toDo id is :"+ id;
     }
-    // @PostMapping("/create")
-    // String createUser(@RequestBody String body){
-    //     return body;
-    // }
+    @PostMapping("/create")
+    String createUser(@RequestBody String body){
+        return body;
+    }
     @PutMapping("/{id}")
         String updateToDo(@PathVariable long id){
             return "update:"+ id;
